@@ -1,0 +1,135 @@
+@font-face {
+  font-family: norse;
+  src: url('./assets/font/Norse-Bold.otf');
+}
+
+.container,
+.sidebar > div {
+  display: flex;
+}
+
+.sidebar {
+  width: 40vw;
+  height: 100vh;
+  background-image: url('./assets/image/halie-west-25xggax4bSA-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar > div {
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 120px;
+}
+
+.sidebar > div > img {
+  height: 180px;
+  padding: 16px;
+}
+
+.sidebar > div > h1 {
+  font-family: norse;
+  color: white;
+  font-size: 100px;
+}
+
+.sidebar > div {
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(249, 250, 251);
+  font-size: 25px;
+}
+
+main > p {
+  font-weight: 600;
+  line-height: 30px;
+  padding: 10px 50px;
+  width: 800px;
+}
+
+main > form {
+  width: 100%;
+}
+
+form > section {
+  background-color: white;
+  padding: 20px 50px;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.row {
+  display: flex;
+  gap: 50px;
+  margin-top: 8px;
+}
+
+.row > div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+button {
+  background-color: #596d48;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  height: 50px;
+  width: 180px;
+  font-weight: 700;
+}
+
+.btn {
+  margin-top: 8px;
+  padding: 10px 50px;
+}
+
+.btn > p {
+  margin-top: 2px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input {
+  padding: 10px 5px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-color: #66afe9;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+a {
+  color: #596d48;
+}
